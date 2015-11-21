@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "添加唐诗"; ObjectID = "CC6-9Q-afC"; */
+"CC6-9Q-afC.title" = "Add Tangshi";
+
+/* Class = "UIBarButtonItem"; title = "保存"; ObjectID = "TiC-dy-r9k"; */
+"TiC-dy-r9k.title" = "Save";
+
+/* Class = "UINavigationItem"; title = "唐诗"; ObjectID = "hUj-pD-gx5"; */
+"hUj-pD-gx5.title" = "Tangshi";
+
+/* Class = "UIBarButtonItem"; title = "排序"; ObjectID = "vus-dG-VZ0"; */
+"vus-dG-VZ0.title" = "Edit";

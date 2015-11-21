@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  SearchTest
+
+  Created by Johannes on 15/11/19.
+  Copyright © 2015年 何江浩. All rights reserved.
+*/
+/* No comment provided by engineer. */
+"Can't be empty!" = "不能为空";
+
+/* No comment provided by engineer. */
+"Cancel" = "取消";
+
+/* No comment provided by engineer. */
+"Delete" = "删除";
+
+/* No comment provided by engineer. */
+"delete" = "删除";
+
+/* No comment provided by engineer. */
+"Edit" = "编辑";
+
+/* No comment provided by engineer. */
+"Mark as no read" = "标记为未读";
+
+/* No comment provided by engineer. */
+"No change!" = "没有任何改变";
+
+/* No comment provided by engineer. */
+"OK" = "好";
