@@ -8,7 +8,6 @@
 
 #import "TableViewController.h"
 #import "ViewController.h"
-#import "ResultViewController.h"
 
 @interface TableViewController ()<AddProtocol,UISearchResultsUpdating>
 
@@ -32,6 +31,8 @@
     _searchController.dimsBackgroundDuringPresentation = NO;
     [_searchController.searchBar sizeToFit];
     self.tableView.tableHeaderView = _searchController.searchBar;
+    
+    self.definesPresentationContext = YES;//这样pushviewController 的时候searchBar才会在下面
 }
 
 /*
@@ -128,7 +129,7 @@
         tangShiCtn = _filteredData[index];
         vc.index = -1;
         [self.searchController.searchBar resignFirstResponder];
-        [self.searchController.view setHidden:YES];
+        //[self.searchController.view setHidden:YES];
     } else {
         tangShiCtn = _dataList[index];
         vc.index = index;//此时可以修改内容
@@ -138,7 +139,7 @@
 }
 
 - (nullable NSArray<UITableViewRowAction *> *) tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewRowAction *action = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:NSLocalizedString(@"Mark as no read", <#comment#>) handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+    UITableViewRowAction *action = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:NSLocalizedString(@"Mark as no read", nil) handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         NSLog(@"标记为未读");
     }];
     UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:NSLocalizedString(@"delete", nil) handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
